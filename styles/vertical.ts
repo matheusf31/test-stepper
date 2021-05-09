@@ -5,7 +5,19 @@ import { StepLabel } from "@material-ui/core";
 export const Container = styled(StepContent)``;
 
 export const CustomStepLabel = styled(StepLabel)`
-  span span:last-child {
+  .MuiStepLabel-label {
     margin-left: 20px;
+  }
+
+  .MuiStepIcon-text {
+    display: none;
+  }
+
+  .MuiStepIcon-completed {
+    color: green;
+  }
+
+  circle {
+    color: gray;
   }
 `;
